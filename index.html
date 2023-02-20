@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZOOME DANCE STUDIO</title>
+  <link rel="stylesheet" href="./vendor/normalize.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./vendor/fonts/fonts.css">
+</head>
+
+<body class="page">
+  <header class="header">
+    <span class="header__gradient"></span>
+    <nav class="header__nav navbar navbar-expand-md">
+      <a href="#" class="header__logo-link navbar-brand"><img src="./images/DS__logo.svg" alt="Logo"
+          class="header__logo"></a>
+      <button class="header__hamburger navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+      </button>
+      <div class="header__container collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="header__menu nav">
+          <li class="header__menu-item nav-item"><a href="#about" class="header__menu-link">About</a></li>
+          <li class="header__menu-item nav-item"><a href="#schedule" class="header__menu-link">Schedule</a></li>
+          <li class="header__menu-item nav-item"><a href="#teachers" class="header__menu-link">Trainers</a></li>
+          <li class="header__menu-item nav-item"><a href="#contacts" class="header__menu-link">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="intro">
+      <span class="intro__gradient"></span>
+      <h1 class="intro__title">DANCE SCOUT</h1>
+      <button type="button" class="intro__button button">start dancing</button>
+      <img src="./images/intro__img.jpg" alt="Танцующая женщина" class="intro__img">
+    </section>
+    <section class="about" id="about">
+      <span class="about__gradient"></span>
+      <div class="about__grid">
+        <h2 class="about__title">ABOUT US</h2>
+        <img src="./images/woman.jpg" alt="Женщина с ноутбуком" class="about__img about__img_woman">
+        <p class="about__text about__text_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <img src="./images/girl__dancers.jpg" alt="Танцовщицы" class="about__img about__img_dancers">
+        <p class="about__text about__text_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. </p>
+      </div>
+    </section>
+    <section class="schedule">
+      <h2 class="schedule__title" id="schedule">SCHEDULE</h2>
+      <p class="schedule__subtitle">KIDS</p>
+      <div class="schedule__block schedule__block_children">
+        <nav class="schedule__nav">
+          <button type="button" class="schedule__slide-btn schedule__slide-btn_prev"></button>
+          <ul class="schedule__weekday-list">
+            <li class="schedule__weekday schedule__weekday_active" data-name="children_1">MO</li>
+            <li class="schedule__weekday" data-name="children_2">TU</li>
+            <li class="schedule__weekday" data-name="children_3">WE</li>
+            <li class="schedule__weekday" data-name="children_4">TH</li>
+            <li class="schedule__weekday" data-name="children_5">FR</li>
+            <li class="schedule__weekday" data-name="children_6">SA</li>
+            <li class="schedule__weekday" data-name="children_7">SU</li>
+          </ul>
+          <button type="button" class="schedule__slide-btn schedule__slide-btn_next"></button>
+        </nav>
+        <div class="schedule__slides schedule__slides_children">
+          <div class="schedule__slide schedule__slide_active" id="children_1">
+            <div class="schedule__row">
+              <p class="schedule__time">1</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">2</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">3333</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule__slide" id="children_2">
+            <div class="schedule__row">
+              <p class="schedule__time">2</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule__slide" id="children_3">
+            <div class="schedule__row">
+              <p class="schedule__time">3</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule__slide" id="children_4">
+            <div class="schedule__row">
+              <p class="schedule__time">4</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule__slide" id="children_5">
+            <div class="schedule__row">
+              <p class="schedule__time">5</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule__slide" id="children_6">
+            <div class="schedule__row">
+              <p class="schedule__time">6</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule__slide" id="children_7">
+            <div class="schedule__row">
+              <p class="schedule__time">7</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="schedule__subtitle">ADULTS</p>
+      <div class="schedule__block schedule__block_adult">
+        <nav class="schedule__nav">
+          <button type="button" class="schedule__slide-btn schedule__slide-btn_prev"></button>
+          <ul class="schedule__weekday-list">
+            <li class="schedule__weekday schedule__weekday_active" data-name="adults_1">ПН</li>
+            <li class="schedule__weekday" data-name="adults_2">ВТ</li>
+            <li class="schedule__weekday" data-name="adults_3">СР</li>
+            <li class="schedule__weekday" data-name="adults_4">ЧТ</li>
+            <li class="schedule__weekday" data-name="adults_5">ПТ</li>
+            <li class="schedule__weekday" data-name="adults_6">СБ</li>
+            <li class="schedule__weekday" data-name="adults_7">ВС</li>
+          </ul>
+          <button type="button" class="schedule__slide-btn schedule__slide-btn_next"></button>
+        </nav>
+        <div class="schedule__slides schedule__slides_adults">
+          <div class="schedule__slide schedule__slide_active" id="adults_1">
+            <div class="schedule__row">
+              <p class="schedule__time">1</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule__slide" id="adults_2">
+            <div class="schedule__row">
+              <p class="schedule__time">2</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule__slide" id="adults_3">
+            <div class="schedule__row">
+              <p class="schedule__time">3</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule__slide" id="adults_4">
+            <div class="schedule__row">
+              <p class="schedule__time">4</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule__slide" id="adults_5">
+            <div class="schedule__row">
+              <p class="schedule__time">5</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule__slide" id="adults_6">
+            <div class="schedule__row">
+              <p class="schedule__time">6</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule__slide" id="adults_7">
+            <div class="schedule__row">
+              <p class="schedule__time">7</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <p class="schedule__time">15:00 - 15:30</p>
+              <div class="schedule__row-content">
+                <p class="schedule__lesson">Course title</p>
+                <p class="schedule__teacher">Dance Teacher: Name</p>
+                <p class="schedule__level">Difficulty level: Beginners</p>
+                <button type="button" class="schedule__button button">sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="form">
+      <div class="form__block">
+        <h2 class="form__title">SIGN UP FOR CLASSES</h2>
+        <div class="form__content">
+          <div class="form__row">
+            <p class="form__label">Date:</p>
+            <span class="form__button">11.11.11</span>
+          </div>
+          <div class="form__row">
+            <p class="form__label">Time:</p>
+            <span class="form__button">17:00-18:00</span>
+          </div>
+          <div class="form__row">
+            <p class="form__label">Course:</p>
+            <span class="form__button">Course Title</span>
+          </div>
+          <div class="form__row">
+            <span class="form__button-bottom">Kid</span>
+            <span class="form__button-bottom">Adult</span>
+          </div>
+        </div>
+        <button type="butto " class="form__submit button">sign up</button>
+      </div>
+    </section>
+    <section class="teachers">
+      <span class="teachers__gradient"></span>
+      <div class="teachers__title-container">
+        <button type="button" class="teachers__slide-button teachers__slide-button_prev"></button>
+        <h2 class="teachers__title" id="teachers">INSCTRUCTORS</h2>
+        <button type="button" class="teachers__slide-button teachers__slide-button_next"></button>
+      </div>
+      <div class="teachers__swiper swiper">
+        <ul class="teachers__wrapper swiper-wrapper">
+          <li class="teachers__slide swiper-slide">
+            <img src="./images/teacher_1.jpg" alt="Фото учителя" class="teachers__img">
+            <h3 class="teachers__subtitle">Lorem ipsum</h3>
+            <p class="teachers__txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto beatae quo odit animi culpa
+              sapiente inventore maxime atque cupiditate fuga tempore possimus est quaerat, ut earum necessitatibus.
+              Eius, incidunt.
+            </p>
+          </li>
+          <li class="teachers__slide swiper-slide">
+            <img src="./images/teacher_2.jpg" alt="Фото учителя" class="teachers__img">
+            <h3 class="teachers__subtitle">Lorem ipsum</h3>
+            <p class="teachers__txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto beatae quo odit animi culpa
+              sapiente inventore maxime atque cupiditate fuga tempore possimus est quaerat, ut earum necessitatibus.
+              Eius, incidunt.
+            </p>
+          </li>
+          <li class="teachers__slide swiper-slide">
+            <img src="./images/teacher_3.jpg" alt="Фото учителя" class="teachers__img">
+            <h3 class="teachers__subtitle">Lorem ipsum</h3>
+            <p class="teachers__txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto beatae quo odit animi culpa
+              sapiente inventore maxime atque cupiditate fuga tempore possimus est quaerat, ut earum necessitatibus.
+              Eius, incidunt.
+            </p>
+          </li>
+          <li class="teachers__slide swiper-slide">
+            <img src="./images/teacher_3.jpg" alt="Фото учителя" class="teachers__img">
+            <h3 class="teachers__subtitle">Lorem ipsum</h3>
+            <p class="teachers__txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto beatae quo odit animi culpa
+              sapiente inventore maxime atque cupiditate fuga tempore possimus est quaerat, ut earum necessitatibus.
+              Eius, incidunt.
+            </p>
+          </li>
+          <li class="teachers__slide swiper-slide">
+            <img src="./images/teacher_3.jpg" alt="Фото учителя" class="teachers__img">
+            <h3 class="teachers__subtitle">Lorem ipsum</h3>
+            <p class="teachers__txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto beatae quo odit animi culpa
+              sapiente inventore maxime atque cupiditate fuga tempore possimus est quaerat, ut earum necessitatibus.
+              Eius, incidunt.
+            </p>
+          </li>
+          <li class="teachers__slide swiper-slide">
+            <img src="./images/teacher_3.jpg" alt="Фото учителя" class="teachers__img">
+            <h3 class="teachers__subtitle">Lorem ipsum</h3>
+            <p class="teachers__txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto beatae quo odit animi culpa
+              sapiente inventore maxime atque cupiditate fuga tempore possimus est quaerat, ut earum necessitatibus.
+              Eius, incidunt.
+            </p>
+          </li>
+          <li class="teachers__slide swiper-slide">
+            <img src="./images/teacher_3.jpg" alt="Фото учителя" class="teachers__img">
+            <h3 class="teachers__subtitle">Lorem ipsum</h3>
+            <p class="teachers__txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto beatae quo odit animi culpa
+              sapiente inventore maxime atque cupiditate fuga tempore possimus est quaerat, ut earum necessitatibus.
+              Eius, incidunt.
+            </p>
+          </li>
+          <li class="teachers__slide swiper-slide">
+            <img src="./images/teacher_3.jpg" alt="Фото учителя" class="teachers__img">
+            <h3 class="teachers__subtitle">Lorem ipsum</h3>
+            <p class="teachers__txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto beatae quo odit animi culpa
+              sapiente inventore maxime atque cupiditate fuga tempore possimus est quaerat, ut earum necessitatibus.
+              Eius, incidunt.
+            </p>
+          </li>
+          <li class="teachers__slide swiper-slide">
+            <img src="./images/teacher_3.jpg" alt="Фото учителя" class="teachers__img">
+            <h3 class="teachers__subtitle">Lorem ipsum</h3>
+            <p class="teachers__txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto beatae quo odit animi culpa
+              sapiente inventore maxime atque cupiditate fuga tempore possimus est quaerat, ut earum necessitatibus.
+              Eius, incidunt.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="gallery">
+      <h2 class="gallery__title">PHOTOS</h2>
+      <div class="gallery__wrapper">
+        <div class="gallery__grid">
+          <img src="./images/gallery__img.jpg" alt="Gallery image" class="gallery__img">
+          <img src="./images/gallery__img.jpg" alt="Gallery image" class="gallery__img">
+          <img src="./images/gallery__img.jpg" alt="Gallery image" class="gallery__img">
+          <img src="./images/gallery__img.jpg" alt="Gallery image" class="gallery__img">
+          <img src="./images/gallery__img.jpg" alt="Gallery image" class="gallery__img">
+          <img src="./images/gallery__img.jpg" alt="Gallery image" class="gallery__img">
+          <img src="./images/gallery__img.jpg" alt="Gallery image" class="gallery__img">
+          <img src="./images/gallery__img.jpg" alt="Gallery image" class="gallery__img">
+          <img src="./images/gallery__img.jpg" alt="Gallery image" class="gallery__img">
+          <img src="./images/gallery__img.jpg" alt="Gallery image" class="gallery__img">
+          <img src="./images/gallery__img.jpg" alt="Gallery image" class="gallery__img">
+          <img src="./images/gallery__img.jpg" alt="Gallery image" class="gallery__img">
+          <img src="./images/gallery__img.jpg" alt="Gallery image" class="gallery__img">
+          <img src="./images/gallery__img.jpg" alt="Gallery image" class="gallery__img">
+          <img src="./images/gallery__img.jpg" alt="Gallery image" class="gallery__img">
+          <img src="./images/gallery__img.jpg" alt="Gallery image" class="gallery__img">
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <span class="feedback__gradient"></span>
+      <h2 class="feedback__title">REVIEWS</h2>
+      <div class="feedback__swiper swiper">
+        <div class="feedback__wrapper swiper-wrapper">
+          <div class="feedback__slide swiper-slide">
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+          </div>
+          <div class="feedback__slide swiper-slide">
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+          </div>
+          <div class="feedback__slide swiper-slide">
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+          </div>
+          <div class="feedback__slide swiper-slide">
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+          </div>
+          <div class="feedback__slide swiper-slide">
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+          </div>
+          <div class="feedback__slide swiper-slide">
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+            <div class="feedback__card">
+              <img src="./images/user_1.jpg" alt="Картинка пользователия" class="feedback__img">
+              <p class="feedback__user-name">Lorem ipsum</p>
+              <p class="feedback__txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis, mollitia repudiandae velit impedit
+                alias, beatae blanditiis quam corrupti explicabo natus ad? Eligendi nisi, ipsa ea tempora voluptas iusto
+                laboriosam?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="feedback__bottom-container">
+          <button class="feedback__slide-btn feedback__slide-btn_prev"></button>
+          <a href="#" class="feedback__link">read more</a>
+          <button class="feedback__slide-btn feedback__slide-btn_next"></button>
+        </div>
+        <div class="feedback__pagination"></div>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__title" id="contacts">CONTACTS</h2>
+      <div class="contacts__container">
+        <div class="contacts__info">
+          <p class="contacts__txt">SINGAPORE DANCE STUDIO</p>
+          <p class="contacts__txt">Bakers str. 123</p>
+          <p class="contacts__number">+65 (999) 999-99-99</p>
+          <div class="contacts__social">
+            <a href="#" class="contacts__link"><img src="./images/vk.png" alt="Логотип ВК"
+                class="contacts__link-logo"></a>
+            <a href="#" class="contacts__link"><img src="./images/instagram.png" alt="Логотип Инстаграм"
+                class="contacts__link-logo"></a>
+          </div>
+        </div>
+        <iframe class="contacts__map"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Afa600943a24e05d294f32f92ea4803c7a7042fba3cf40e8128b83fd341c7fd55&amp;source=constructor"></iframe>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>
